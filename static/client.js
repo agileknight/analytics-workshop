@@ -7,7 +7,7 @@ $(document).ready(function() {
       values[this.name] = $(this).val();
     });
     
-    alert("Registered with username " + values['username']);
+    mixpanel.identify(values['username');
     event.preventDefault();
   });
 })
