@@ -8,6 +8,7 @@ $(document).ready(function() {
     });
     
     mixpanel.identify(values['username');
+    mixpanel.track("user registered", {});
     event.preventDefault();
   });
 })
